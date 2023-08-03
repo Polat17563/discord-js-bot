@@ -1,15 +1,15 @@
 module.exports = {
-  OWNER_IDS: [""], // Bot owner ID's
-  SUPPORT_SERVER: "", // Your bot support server
+  OWNER_IDS: ["741953626859110422"], // Bot owner ID's
+  SUPPORT_SERVER: "https://discord.gg/uQajspFgN2", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
     DEFAULT_PREFIX: "!", // Default prefix for the bot
   },
   INTERACTIONS: {
-    SLASH: false, // Should the interactions be enabled
+    SLASH: true, // Should the interactions be enabled
     CONTEXT: false, // Should contexts be enabled
-    GLOBAL: false, // Should the interactions be registered globally
-    TEST_GUILD_ID: "xxxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
+    GLOBAL: true, // Should the interactions be registered globally
+    TEST_GUILD_ID: "1109061849388953620", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   EMBED_COLORS: {
     BOT_EMBED: "#068ADD",
@@ -30,7 +30,7 @@ module.exports = {
   // PLUGINS
 
   AUTOMOD: {
-    ENABLED: false,
+    ENABLED: true,
     LOG_EMBED: "#36393F",
     DM_EMBED: "#36393F",
   },
@@ -54,7 +54,7 @@ module.exports = {
     ENABLED: false,
     IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
     MAX_SEARCH_RESULTS: 5,
-    DEFAULT_SOURCE: "SC", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
+    DEFAULT_SOURCE: "YT", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
     // Add any number of lavalink nodes here
     // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
     LAVALINK_NODES: [
@@ -85,7 +85,7 @@ module.exports = {
   },
 
   MODERATION: {
-    ENABLED: false,
+    ENABLED: true,
     EMBED_COLORS: {
       TIMEOUT: "#102027",
       UNTIMEOUT: "#4B636E",
@@ -127,7 +127,7 @@ module.exports = {
   },
 
   TICKET: {
-    ENABLED: false,
+    ENABLED: true,
     CREATE_EMBED: "#068ADD",
     CLOSE_EMBED: "#068ADD",
   },
